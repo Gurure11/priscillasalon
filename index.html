@@ -55,24 +55,69 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Mobile Menu Specific Styles */
+    @media (max-width: 767px) { /* Adjust breakpoint as needed, Tailwind's 'md' is 768px */
+      .nav-links {
+        display: none; /* Hide desktop menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #0b225a; /* Dark blue background */
+        position: absolute;
+        top: 64px; /* Height of the fixed nav bar */
+        left: 0;
+        padding: 1rem 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .nav-links.active {
+        display: flex; /* Show menu when active */
+      }
+      .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+      }
+      .nav-links a {
+        display: block;
+        padding: 0.75rem 0;
+        color: white;
+        font-size: 1.125rem; /* text-lg */
+      }
+      .hamburger-button {
+        display: block; /* Show hamburger icon on mobile */
+      }
+    }
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex !important; /* Always show desktop menu on larger screens */
+      }
+      .hamburger-button {
+        display: none; /* Hide hamburger icon on desktop */
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
   <nav class="bg-blue-900 text-white shadow-lg p-4 flex justify-between items-center fixed w-full z-50 top-0">
     <div class="flex items-center">
-      <img src="images/q6.jpg" alt="Quantum Digitech Solutions Logo" class="h-10 w-10 mr-3 rounded-full border-2 border-yellow-400">
+      <img src="https://via.placeholder.com/40x40?text=Logo" alt="Quantum Digitech Solutions Logo" class="h-10 w-10 mr-3 rounded-full border-2 border-yellow-400">
       <h1 class="text-2xl font-extrabold tracking-wide">Quantum Digitech Solutions</h1>
     </div>
-    <ul class="flex space-x-6 text-lg font-medium">
-      
+
+    <button id="hamburger" class="hamburger-button text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul id="nav-links" class="nav-links space-x-6 text-lg font-medium md:flex">
+      <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a></li>
       <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
       <li><a href="#services" class="hover:text-yellow-400 transition duration-300">Services</a></li>
       <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="home" class="pt-20"> <div class="swiper mySwiper">
+  <section id="home" class="pt-20">
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="images/q6.jpg" alt="Cutting-edge Technology Solutions">
@@ -296,6 +341,23 @@
 
     // Set current year in footer
     document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle functionality
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked (for smoother navigation on mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
