@@ -1,165 +1,131 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>PRISCILLA BEAUTY HAIR SALON & MASSAGE PARLOUR</title>
-	<meta name="description" content="Hair salon">
-	<meta name="keywords" content="beauty shop, massage parlour, hair salon in vereening">
-	  <link rel="stylesheet" href="app.js">
-  	<link rel="stylesheet" href="server.js">
-	<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-			text-decoration: none;
-			list-style: none;
-			box-sizing: border-box;
-		}
-		nav{
-			background: blue;
-			height: 80px;
-			width: 100%;
-			display: inline-block;
-		}
-		#main-head{
-			font-size: 20px;
-			color: white;
-			line-height: 80px;
-			display: inline-block;
-			margin-bottom: 0px;
-			float: left;
-
-
-		}
-		nav ul{
-			float: right;
-			margin-right: 20px;
-			display: inline-block;
-
-		}
-		nav ul li{
-			display: inline-block;
-			line-height: 80px;
-			margin: 0 5px;
-			position: relative;
-
-		}
-		nav ul li a{
-			color: white;
-			font-size: 20px;
-			text-transform: uppercase;
-			padding: 7px 13px;
-			border-radius: 3px;
-			display: inline-block;
-					
-			}
-			a.active,a:hover{
-				color: white;
-				transition: 0.15s;
-				
-
-			
-			}
-			
-			nav ul li a:hover{
-				color: white;
-				display: inline-block;
-				background-color: green;
-				padding: 5px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				transition: 0.15s;
-				opacity: 0.5;}
-	
-
-			
-		#slider{
-			overflow: hidden;
-		}
-		#slider figure{
-			position: relative;
-			width: 500%;
-			margin: 0;
-			left: 0;
-			animation: 20s slider infinite;
-
-		}
-		#slider figure img{
-			float: left;
-			width: 20%;
-		}
-		@keyframes slider{
-			0%{
-				left: 0;
-			}
-			20%{
-				left: 0;
-			}
-			25%{
-				left: -100%;
-			}
-			45%{
-				left: -100%;
-			}
-			50%{
-				left: -200%;
-			}
-			70%{
-				left: -200%;
-			}
-			75%{
-				left: -300%;
-			}
-			95%{
-				left: -300%;
-			}
-			100%{
-				left: -400%;
-			
-		}
-		.facebook{
-			width: 20px;
-			border-radius: 1px;
-		}
-		.instagram{
-			width: 10px;
-			border-radius: 1px;
-		}
-
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quantum Digitech Solutions - Computer & Electronics Experts in Vereeniging. We specialize in computer repairs, software installation, TV and cellphone repairs, accessories, smart TVs, gaming PCs, and more.">
+  <meta name="keywords" content="Quantum Digitech, Computer Repairs Vereeniging, TV Repairs, Laptop Repairs, Gaming Computers, Electronics Supplier, Website Development, CCTV Installation">
+  <meta name="author" content="Quantum Digitech Solutions Pty">
+  <title>Quantum Digitech Solutions Pty</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    .swiper { width: 100%; height: 500px; }
+    .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .service-grid img { width: 100%; height: auto; border-radius: 0.5rem; }
+  </style>
 </head>
+<body class="bg-white text-gray-900">
+  <nav class="bg-blue-900 text-white shadow-md p-4 flex justify-between">
+    <h1 class="text-xl font-bold">Quantum Digitech Solutions</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
 
-	<br>
-<body>
-	
-	<nav>
+  <section id="home" class="pt-16">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/tech1.jpg" alt="Tech"></div>
+        <div class="swiper-slide"><img src="images/repair1.jpg" alt="Repairs"></div>
+        <div class="swiper-slide"><img src="images/gaming1.jpg" alt="Gaming"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
+  <section id="about" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-lg">
+        Quantum Digitech Solutions Pty, based in Vereeniging, has over 15 years of experience in the computer and electronics technology sector. We pride ourselves in delivering top-tier services in computer and laptop repairs, TV and cellphone repairs, hardware and software installations, and supplying smart TVs and electronic household items. Our passion for innovation extends to building custom gaming computers, website development, and CCTV installations. Your tech solutions under one roof!
+      </p>
+    </div>
+  </section>
 
-<h6 id="main-head">PRISCILLA BEAUTY HAIR SALON </h6><br>
-		
-	
-	<ul>
-		<li><a class="active" href="index.html">Home</a></li>
-		<li><a href="details.html">About Us</a></li>
-		<li><a href="details.html">Services</a></li>
-		<li><a href="contacts.html">Contacts</a></li>
-	</ul>
-	</nav>
+  <section id="services" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 service-grid">
+        <div>
+          <img src="images/computer1.jpg" alt="Computer Repairs">
+          <img src="images/computer2.jpg" alt="Computer Repairs">
+          <p class="mt-2">Expert computer and laptop repairs to keep you running efficiently.</p>
+        </div>
+        <div>
+          <img src="images/software1.jpg" alt="Software Installations">
+          <img src="images/software2.jpg" alt="Hardware Installations">
+          <p class="mt-2">Professional hardware and software installations tailored to your needs.</p>
+        </div>
+        <div>
+          <img src="images/tvrepair1.jpg" alt="TV Repairs">
+          <img src="images/cellrepair1.jpg" alt="Cellphone Repairs">
+          <p class="mt-2">Fast and efficient repairs for TVs and smartphones of all models.</p>
+        </div>
+        <div>
+          <img src="images/smarttv1.jpg" alt="Smart TVs">
+          <img src="images/smarttv2.jpg" alt="TV Supply">
+          <p class="mt-2">We supply Smart TVs and household electronics at unbeatable prices.</p>
+        </div>
+        <div>
+          <img src="images/gaming1.jpg" alt="Gaming PCs">
+          <img src="images/gaming2.jpg" alt="Custom Builds">
+          <p class="mt-2">Custom-built gaming computers designed for ultimate performance.</p>
+        </div>
+        <div>
+          <img src="images/accessories1.jpg" alt="Accessories">
+          <img src="images/accessories2.jpg" alt="Computer Accessories">
+          <p class="mt-2">We stock a variety of cellphone and computer accessories for all your needs.</p>
+        </div>
+        <div>
+          <img src="images/cctv1.jpg" alt="CCTV Installation">
+          <img src="images/cctv2.jpg" alt="Surveillance">
+          <p class="mt-2">Reliable CCTV installation services to secure your property 24/7.</p>
+        </div>
+        <div>
+          <img src="images/webdev1.jpg" alt="Website Development">
+          <img src="images/webdev2.jpg" alt="Web Solutions">
+          <p class="mt-2">Professional website design and development to grow your digital presence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="contact" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <p class="text-center mb-4">📍 28 Kruger Avenue, Vereeniging</p>
+      <p class="text-center mb-4">📞 Cell / WhatsApp: <a href="tel:+27786809808" class="text-blue-800 font-semibold">078 680 9808</a></p>
+      <p class="text-center mb-4">📧 Email: <a href="mailto:quantumdigitech@gmail.com" class="text-blue-800 font-semibold">quantumdigitech@gmail.com</a></p>
+      <div class="flex justify-center gap-6 mt-6">
+        <a href="https://facebook.com" target="_blank" class="text-blue-700 text-2xl"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/27786809808" target="_blank" class="text-green-600 text-2xl"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-pink-500 text-2xl"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
 
-<div id="slider">
-	<figure>
-	<img src="images/da.jpeg">
-	<img src="images/ra.jpeg">
-	<img src="images/k.jpeg">
-	<img src="images/re.jpeg">
-	</figure>
-	
-</div>
-	<br>
-	<br>
-	<footer>
-		<a rel="nofollow" href="https://www.gumtree.co.za/u-seller-listings/priscillasalon-massage/v1u131621363p1" target="_blank">        <img src="https://securet9.classistatic.com/assets/images/en_ZA/sellerBadge_large-b186c52131.jpg" alt="Find all my products at Gumtree"/></a>
-	</footer>
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Quantum Digitech Solutions Pty. All rights reserved.</p>
+  </footer>
+
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
