@@ -94,6 +94,15 @@
       .hamburger-button {
         display: none; /* Hide hamburger icon on desktop */
       }
+      .contact-item {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  text-align: center;
+}
+.contact-item i {
+  margin-right: 0 !important; /* Remove right margin on icon */
+  margin-bottom: 0.5rem; /* Add bottom margin for spacing */
+}
     }
   </style>
 </head>
@@ -286,10 +295,11 @@
       <p class="text-xl mb-6">Have a question or need assistance? Reach out to our expert team!</p>
 
       <div class="bg-white text-gray-900 p-8 rounded-lg shadow-xl mb-8">
-        <p class="text-lg mb-4 flex items-center justify-center">
-          <i class="fas fa-map-marker-alt text-blue-600 mr-3 text-2xl"></i>
-          <span class="font-semibold">Visit Us:</span> 28 Kruger Avenue, Vereeniging
-        </p>
+        <p class="text-lg mb-4 flex items-center justify-center contact-item">
+  <i class="fas fa-map-marker-alt text-purple-600 mr-3 text-2xl"></i>
+  <span class="font-semibold">Visit Us:</span> 28 Kruger Avenue, Vereeniging
+</p>
+        
         <p class="text-lg mb-4 flex items-center justify-center">
           <i class="fas fa-phone-alt text-blue-600 mr-3 text-2xl"></i>
           <span class="font-semibold">Call / WhatsApp:</span> <a href="tel:+27786809808" class="text-blue-800 hover:underline">078 680 9808</a>
