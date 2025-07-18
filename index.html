@@ -1,376 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="sKSEKPoNX_KdPLK2Ajd1IRJHd6lSPwFbxcGOMJjKpAI" />
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Quantum Digitech Solutions - Computer & Electronics Experts in Vereeniging. We specialize in computer repairs, software installation, TV and cellphone repairs, accessories, smart TVs, gaming PCs, and more.">
-  <meta name="keywords" content="Quantum Digitech, Computer Repairs Vereeniging, TV Repairs, Laptop Repairs, Gaming Computers, Electronics Supplier, Website Development, CCTV Installation">
-  <meta name="author" content="Quantum Digitech Solutions Pty">
-  <title>Quantum Digitech Solutions Pty</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quantum Digitech Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <style>
-    /* Custom styles for Swiper */
-    .swiper {
-      width: 100%;
-      height: 600px; /* Increased height for a more impactful hero section */
-    }
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .swiper-slide {
-      position: relative;
-    }
-    .swiper-slide-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .swiper-slide-overlay h2 {
-      font-size: 3rem; /* Larger heading */
-      font-weight: bold;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-    .swiper-slide-overlay p {
-      font-size: 1.5rem; /* Larger text */
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    }
-    /* Smooth scroll for anchor links */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Mobile Menu Specific Styles */
-    @media (max-width: 767px) { /* Adjust breakpoint as needed, Tailwind's 'md' is 768px */
-      .nav-links {
-        display: none; /* Hide desktop menu by default on mobile */
-        flex-direction: column;
-        width: 100%;
-        background-color: #6a1b9a; /* Purple background */
-        position: absolute;
-        top: 64px; /* Height of the fixed nav bar */
-        left: 0;
-        padding: 1rem 0;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      }
-      .nav-links.active {
-        display: flex; /* Show menu when active */
-      }
-      .nav-links li {
-        text-align: center;
-        margin: 0.5rem 0;
-      }
-      .nav-links a {
-        display: block;
-        padding: 0.75rem 0;
-        color: white;
-        font-size: 1.125rem; /* text-lg */
-      }
-      .hamburger-button {
-        display: block; /* Show hamburger icon on mobile */
-      }
-    }
-    @media (min-width: 768px) {
-      .nav-links {
-        display: flex !important; /* Always show desktop menu on larger screens */
-      }
-      .hamburger-button {
-        display: none; /* Hide hamburger icon on desktop */
-      }
-      .contact-item {
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items */
-  text-align: center;
-}
-.contact-item i {
-  margin-right: 0 !important; /* Remove right margin on icon */
-  margin-bottom: 0.5rem; /* Add bottom margin for spacing */
-}
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="description" content="Quantum Digitech Solutions - Your trusted partner in technology for over 15 years. Based in Vereeniging, we offer computer and electronics repairs, installations, and sales."/>
+  <meta name="keywords" content="Quantum Digitech, computer repairs, TV repairs, cell phone repairs, Vereeniging electronics, smart TV, CCTV installations, website development, gaming PC"/>
+  <meta name="author" content="Quantum Digitech Solutions Pty"/>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
-  <nav class="bg-blue-900 text-white shadow-lg p-4 flex justify-between items-center fixed w-full z-50 top-0">
-    <div class="flex items-center">
-      <img src="images/q6.jpg" alt="Quantum Digitech Solutions Logo" class="h-20 w-20 mr-3 rounded-full border-2 border-yellow-400">
-      <h1 class="text-2xl font-extrabold tracking-wide">Quantum Digitech Solutions</h1>
-    </div>
+  <!-- Header -->
+  <header class="bg-violet-800 p-6 text-white text-center">
+    <h1 class="text-3xl font-bold">Quantum Digitech Solutions Pty</h1>
+    <p>Technology Experts with Over 15 Years of Experience</p>
+  </header>
 
-    <button id="hamburger" class="hamburger-button text-white text-2xl focus:outline-none">
-      <i class="fas fa-bars"></i>
-    </button>
+  <!-- About Us -->
+  <section class="p-6 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold text-violet-700 mb-4">About Us</h2>
+    <p>Quantum Digitech Solutions, based in Vereeniging, has been delivering exceptional technology solutions for over 15 years. We specialize in computer repairs, hardware and software installations, TV and cell phone repairs, laptop sales and repairs, Smart TV supply, and electronic household items like Arctic Air coolers and electric fans. Our offerings also include building custom gaming computers, CCTV installations, website development, and supplying cell phone and computer accessories.</p>
+  </section>
 
-    <ul id="nav-links" class="nav-links space-x-6 text-lg font-medium md:flex">
-      <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a></li>
-      <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
-      <li><a href="#services" class="hover:text-yellow-400 transition duration-300">Services</a></li>
-      <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="home" class="pt-20">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/q6.jpg" alt="Cutting-edge Technology Solutions">
-          <div class="swiper-slide-overlay">
-            <h2>Your Premier Tech Partner</h2>
-            <p>Unlocking innovation, one solution at a time.</p>
-            <a href="#services" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full text-xl font-semibold hover:bg-yellow-400 transition duration-300 transform hover:scale-105">Explore Services</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/q16.jpeg" alt="Expert Computer and Electronics Repairs">
-          <div class="swiper-slide-overlay">
-            <h2>Reliable Repairs, Exceptional Service</h2>
-            <p>Bringing your devices back to life with expertise.</p>
-            <a href="#contact" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full text-xl font-semibold hover:bg-yellow-400 transition duration-300 transform hover:scale-105">Get a Quote</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/q10.jpeg" alt="Custom Gaming PCs and IT Solutions">
-          <div class="swiper-slide-overlay">
-            <h2>Powering Your Digital World</h2>
-            <p>From custom builds to seamless IT solutions.</p>
-            <a href="#services" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full text-xl font-semibold hover:bg-yellow-400 transition duration-300 transform hover:scale-105">Discover More</a>
-          </div>
-        </div>
+  <!-- Services -->
+  <section class="p-6 bg-white max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-violet-700 mb-6 text-center">Our Services</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Each service with 2 images and a brief description -->
+      <div>
+        <img src="images/computer1.jpg" alt="Computer Repairs" class="rounded mb-2"/>
+        <img src="images/computer2.jpg" alt="Computer Repairs" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">Computer Repairs</h3>
+        <p>We fix all types of PC problems including hardware faults and software issues.</p>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <hr class="my-10 border-gray-200">
-
-  <section id="about" class="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-extrabold mb-6">About Quantum Digitech Solutions</h2>
-      <p class="text-xl leading-relaxed">
-        <strong>Quantum Digitech Solutions Pty</strong>, proudly based in Vereeniging, stands at the forefront of the computer and electronics technology sector with over <strong>15 years of dedicated experience</strong>. We are committed to delivering top-tier services, specializing in comprehensive computer and laptop repairs, efficient TV and cellphone repairs, and expert hardware and software installations.
-      </p>
-      <p class="text-xl leading-relaxed mt-4">
-        Our passion for innovation extends to supplying cutting-edge Smart TVs and electronic household items, crafting high-performance custom gaming computers, pioneering website development, and ensuring your security with reliable CCTV installations. At Quantum Digitech, your complete tech solutions are found conveniently under one roof, backed by unparalleled expertise and customer satisfaction.
-      </p>
-    </div>
-  </section>
-
-  <hr class="my-10 border-gray-200">
-
-  <section id="services" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-900">Our Comprehensive Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 service-grid">
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/q4.jpg" alt="Computer and Laptop Repairs" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">Computer & Laptop Repairs</h3>
-            <p class="text-gray-700 leading-relaxed">Expert computer and laptop repairs to keep your devices running efficiently and reliably.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/q14.jpeg" alt="Software and Hardware Installations" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">Software & Hardware Installations</h3>
-            <p class="text-gray-700 leading-relaxed">Professional hardware and software installations tailored to your specific needs for optimal performance.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/q12.jpeg" alt="TV and Cellphone Repairs" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">TV & Cellphone Repairs</h3>
-            <p class="text-gray-700 leading-relaxed">Fast and efficient repairs for TVs and smartphones of all makes and models, restoring their functionality.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/q16.jpeg" alt="Smart TVs and Electronic Household Items" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">Smart TV & Electronics Supply</h3>
-            <p class="text-gray-700 leading-relaxed">We supply a wide range of Smart TVs and quality household electronics at unbeatable prices.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/web2.jpeg" alt="Custom Gaming PCs" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">Custom Gaming PCs</h3>
-            <p class="text-gray-700 leading-relaxed">Experience ultimate performance with our custom-built gaming computers, designed for enthusiasts.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/q14.jpeg" alt="Cellphone and Computer Accessories" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">Cellphone & Computer Accessories</h3>
-            <p class="text-gray-700 leading-relaxed">We stock a wide variety of high-quality cellphone and computer accessories for all your digital needs.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/cctv.webp" alt="CCTV Installation" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">CCTV Installation</h3>
-            <p class="text-gray-700 leading-relaxed">Ensure the security of your property 24/7 with our reliable and professional CCTV installation services.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden">
-          <img src="images/web2.jpeg" alt="Website Development" class="w-full h-48 object-cover object-center rounded-t-lg">
-          <div class="p-6 flex-grow">
-            <h3 class="text-2xl font-bold mb-3 text-blue-800">Website Development</h3>
-            <p class="text-gray-700 leading-relaxed">Boost your digital presence with our professional website design and development solutions.</p>
-          </div>
-          <div class="p-6 border-t border-gray-100 bg-gray-50">
-            <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center justify-end">
-              Learn More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
+      <div>
+        <img src="images/tv1.jpg" alt="TV Repairs" class="rounded mb-2"/>
+        <img src="images/tv2.jpg" alt="TV Repairs" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">TV Repairs</h3>
+        <p>Expert repairs for Smart TVs and LED TVs with quick turnaround.</p>
+      </div>
+      <div>
+        <img src="images/cell1.jpg" alt="Cell Phone Repairs" class="rounded mb-2"/>
+        <img src="images/cell2.jpg" alt="Cell Phone Repairs" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">Cell Phone Repairs</h3>
+        <p>Screen replacement, battery replacement, and more for all models.</p>
+      </div>
+      <div>
+        <img src="images/smarttv1.jpg" alt="Smart TV Supply" class="rounded mb-2"/>
+        <img src="images/smarttv2.jpg" alt="Smart TV Supply" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">Smart TV Supply</h3>
+        <p>Wide range of affordable and high-quality Smart TVs available.</p>
+      </div>
+      <div>
+        <img src="images/fans1.jpg" alt="Household Electronics" class="rounded mb-2"/>
+        <img src="images/fans2.jpg" alt="Household Electronics" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">Household Electronics</h3>
+        <p>We supply electric fans, Arctic Air Ultra coolers and more.</p>
+      </div>
+      <div>
+        <img src="images/gaming1.jpg" alt="Gaming PCs" class="rounded mb-2"/>
+        <img src="images/gaming2.jpg" alt="Gaming PCs" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">Gaming Computers</h3>
+        <p>Custom-built gaming rigs with the latest graphics and performance.</p>
+      </div>
+      <div>
+        <img src="images/cctv1.jpg" alt="CCTV Installations" class="rounded mb-2"/>
+        <img src="images/cctv2.jpg" alt="CCTV Installations" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">CCTV Installations</h3>
+        <p>Secure your home or business with our professional CCTV services.</p>
+      </div>
+      <div>
+        <img src="images/web1.jpg" alt="Website Development" class="rounded mb-2"/>
+        <img src="images/web2.jpg" alt="Website Development" class="rounded mb-2"/>
+        <h3 class="font-semibold text-lg">Website Development</h3>
+        <p>Get modern, mobile-friendly websites tailored for your business.</p>
       </div>
     </div>
   </section>
 
-  <hr class="my-10 border-gray-200">
-
-  <section id="contact" class="py-16 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-extrabold mb-8">Get In Touch With Us</h2>
-      <p class="text-xl mb-6">Have a question or need assistance? Reach out to our expert team!</p>
-
-      <div class="bg-white text-gray-900 p-8 rounded-lg shadow-xl mb-8">
-        <p class="text-lg mb-4 flex items-center justify-center contact-item">
-  <i class="fas fa-map-marker-alt text-purple-600 mr-3 text-2xl"></i>
-  <span class="font-semibold">Visit:</span> 28 Kruger Avenue, Vereeniging
-</p>
-        
-        <p class="text-lg mb-4 flex items-center justify-center">
-          <i class="fas fa-phone-alt text-blue-600 mr-3 text-2xl"></i>
-          <span class="font-semibold">Call :</span> <br>
-          <a href="tel:+27786809808" class="text-blue-800 hover:underline">078 680 9808</a><br>
-        </p>
-        <p class="text-lg mb-4 flex items-center justify-center">
-          <i class="fas fa-envelope text-blue-600 mr-3 text-2xl"></i>
-          <span class="font-semibold">Email:</span> <a href="mailto:quantdigitech@gmail.com" class="text-blue-800 hover:underline">quantumdigitech@gmail.com</a>
-        </p>
-      </div>
-
-      <h3 class="text-3xl font-bold mb-6">Connect With Us On Social Media</h3>
-      <div class="flex justify-center gap-8 mt-6">
-        <a href="https://facebook.com" target="_blank" class="text-white hover:text-yellow-400 transition transform hover:scale-110 text-4xl" aria-label="Facebook">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="https://wa.me/27786809808" target="_blank" class="text-white hover:text-yellow-400 transition transform hover:scale-110 text-4xl" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp-square"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank" class="text-white hover:text-yellow-400 transition transform hover:scale-110 text-4xl" aria-label="Instagram">
-          <i class="fab fa-instagram-square"></i>
-        </a>
-      </div>
+  <!-- Contact Page -->
+  <section class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-violet-700 mb-4 text-center">Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="grid grid-cols-1 gap-6">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded" />
+      <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded" />
+      <input type="text" name="subject" placeholder="Subject" required class="w-full p-3 border rounded" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 border rounded"></textarea>
+      <button type="submit" class="bg-violet-800 text-white px-6 py-3 rounded hover:bg-violet-900">Send Message</button>
+    </form>
+    <div class="text-center mt-6">
+      <p class="text-lg font-semibold">Address:</p>
+      <p>28 Kruger Avenue, Vereeniging</p>
+      <p>Phone/WhatsApp: <a href="https://wa.me/27786809808" target="_blank" class="text-violet-700 hover:underline">078 680 9808</a></p>
+      <p>Email: <a href="mailto:quantumdigitech@gmail.com" class="text-violet-700 hover:underline">quantumdigitech@gmail.com</a></p>
     </div>
   </section>
 
-  <hr class="my-10 border-gray-200">
-
-  <footer class="bg-blue-900 text-white text-center py-8">
-    <p class="text-lg">&copy; <span id="current-year"></span> Quantum Digitech Solutions Pty. All rights reserved.</p>
-    <p class="text-sm mt-2">Designed with passion by Quantum Digitech Solutions.</p>
+  <!-- Footer -->
+  <footer class="bg-violet-800 text-white py-6 mt-12">
+    <div class="text-center space-x-4">
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="mailto:quantumdigitech@gmail.com" class="hover:text-yellow-300"><i class="fas fa-envelope fa-lg"></i></a>
+      <a href="https://wa.me/27786809808" target="_blank" class="hover:text-yellow-300"><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+    <p class="text-center text-sm mt-4">© 2025 Quantum Digitech Solutions Pty. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Initialize Swiper
-    new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      effect: "fade", // Added fade effect for smoother transitions
-      fadeEffect: {
-        crossFade: true,
-      },
-    });
-
-    // Set current year in footer
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-
-    // Mobile menu toggle functionality
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    // Close menu when a link is clicked (for smoother navigation on mobile)
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (navLinks.classList.contains('active')) {
-          navLinks.classList.remove('active');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
